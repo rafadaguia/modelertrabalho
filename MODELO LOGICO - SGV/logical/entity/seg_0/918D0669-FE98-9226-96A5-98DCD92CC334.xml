@@ -1,0 +1,110 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="918D0669-FE98-9226-96A5-98DCD92CC334" name="T_SGV_CATEGORIA_PRODUTO">
+<createdBy>Gabriel Zaki</createdBy>
+<createdTime>2024-03-09 00:54:10 UTC</createdTime>
+<ownerDesignName>MODELO LOGICO - SGV</ownerDesignName>
+<engineerTo>
+<item key="1FC5B513-EA91-6D77-17E3-2990C41B4A6B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cd_categoria" id="56FEF143-6A83-D0F2-1848-6C029667E60A">
+<createdBy>Gabriel Zaki</createdBy>
+<createdTime>2024-03-09 01:00:13 UTC</createdTime>
+<ownerDesignName>MODELO LOGICO - SGV</ownerDesignName>
+<engineerTo>
+<item key="1FC5B513-EA91-6D77-17E3-2990C41B4A6B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nm_categoria" id="1A55CF6B-AD51-AF63-94FD-411891A60D06">
+<createdBy>Gabriel Zaki</createdBy>
+<createdTime>2024-03-09 01:01:02 UTC</createdTime>
+<ownerDesignName>MODELO LOGICO - SGV</ownerDesignName>
+<engineerTo>
+<item key="1FC5B513-EA91-6D77-17E3-2990C41B4A6B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ds_categoria" id="620782F4-2BD6-0B7E-675E-5C76D4EEA2EC">
+<createdBy>Gabriel Zaki</createdBy>
+<createdTime>2024-03-09 01:01:33 UTC</createdTime>
+<ownerDesignName>MODELO LOGICO - SGV</ownerDesignName>
+<engineerTo>
+<item key="1FC5B513-EA91-6D77-17E3-2990C41B4A6B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="sg_status_categoria" id="9B817F52-6438-8CAD-68D3-42D558EB4DA7">
+<createdBy>Gabriel Zaki</createdBy>
+<createdTime>2024-03-09 01:02:56 UTC</createdTime>
+<ownerDesignName>MODELO LOGICO - SGV</ownerDesignName>
+<engineerTo>
+<item key="1FC5B513-EA91-6D77-17E3-2990C41B4A6B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6</dataTypeSize>
+<ownDataTypeParameters>6,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dt_inicio" id="71505F1D-212D-E2ED-E184-3D995F945332">
+<createdBy>Gabriel Zaki</createdBy>
+<createdTime>2024-03-09 01:01:50 UTC</createdTime>
+<ownerDesignName>MODELO LOGICO - SGV</ownerDesignName>
+<engineerTo>
+<item key="1FC5B513-EA91-6D77-17E3-2990C41B4A6B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dt_termino" id="CBECC4F8-E851-66EE-7479-CEBE4EF7E0F8">
+<createdBy>Gabriel Zaki</createdBy>
+<createdTime>2024-03-09 01:02:04 UTC</createdTime>
+<ownerDesignName>MODELO LOGICO - SGV</ownerDesignName>
+<engineerTo>
+<item key="1FC5B513-EA91-6D77-17E3-2990C41B4A6B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D1821001-E3EF-EEDD-73CB-1FB8072179E2" name="T_SGV_CATEGORIA_PRODUTO PK">
+<createdBy>Gabriel Zaki</createdBy>
+<createdTime>2024-03-09 01:00:45 UTC</createdTime>
+<ownerDesignName>MODELO LOGICO - SGV</ownerDesignName>
+<engineerTo>
+<item key="1FC5B513-EA91-6D77-17E3-2990C41B4A6B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>56FEF143-6A83-D0F2-1848-6C029667E60A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

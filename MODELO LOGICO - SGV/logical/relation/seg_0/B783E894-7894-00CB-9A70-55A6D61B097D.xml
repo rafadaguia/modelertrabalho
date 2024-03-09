@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="pertencer" directorySegmentName="seg_0" id="B783E894-7894-00CB-9A70-55A6D61B097D">
+<createdBy>Gabriel Zaki</createdBy>
+<createdTime>2024-03-09 01:12:34 UTC</createdTime>
+<ownerDesignName>MODELO LOGICO - SGV</ownerDesignName>
+<engineerTo>
+<item key="1FC5B513-EA91-6D77-17E3-2990C41B4A6B" value="true"/>
+</engineerTo>
+<sourcePk>D6B8A096-2AD3-85CB-770C-EAD67EE48629</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>B1685645-1CC9-C6EF-4E5A-8CC2BDDFEC6E</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>9C352B79-B60C-44B0-1D3F-695BB0AF12D8</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

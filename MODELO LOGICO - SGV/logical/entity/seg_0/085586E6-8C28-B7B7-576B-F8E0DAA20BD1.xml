@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="085586E6-8C28-B7B7-576B-F8E0DAA20BD1" name="T_SGV_PESSOA_JURIDICA">
+<createdBy>Gabriel Zaki</createdBy>
+<createdTime>2024-03-09 00:35:46 UTC</createdTime>
+<ownerDesignName>MODELO LOGICO - SGV</ownerDesignName>
+<engineerTo>
+<item key="1FC5B513-EA91-6D77-17E3-2990C41B4A6B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cd_cliente" id="642F808E-FB29-2170-3A9E-9E4593C5E7B9">
+<createdBy>Gabriel Zaki</createdBy>
+<createdTime>2024-03-09 00:45:24 UTC</createdTime>
+<generatorID>24B6297F-BFE0-EBC0-A9DC-D46F721D14B4</generatorID>
+<ownerDesignName>MODELO LOGICO - SGV</ownerDesignName>
+<engineerTo>
+<item key="1FC5B513-EA91-6D77-17E3-2990C41B4A6B" value="true"/>
+</engineerTo>
+<referedAttribute>15392ABE-2902-DDCB-D40D-9071A1513130</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nm_cnpj" id="A5D584A9-B1EE-70DC-4418-3E2871E70F35">
+<createdBy>Gabriel Zaki</createdBy>
+<createdTime>2024-03-09 00:40:21 UTC</createdTime>
+<ownerDesignName>MODELO LOGICO - SGV</ownerDesignName>
+<engineerTo>
+<item key="1FC5B513-EA91-6D77-17E3-2990C41B4A6B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>14</dataTypePrecision>
+<ownDataTypeParameters>,14,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ds_endereco" id="9908B505-4529-660C-FE3B-BB7ACADADDD8">
+<createdBy>Gabriel Zaki</createdBy>
+<createdTime>2024-03-09 00:49:54 UTC</createdTime>
+<ownerDesignName>MODELO LOGICO - SGV</ownerDesignName>
+<engineerTo>
+<item key="1FC5B513-EA91-6D77-17E3-2990C41B4A6B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F3FBCE0D-E28E-4922-9AB8-9492DCA349BD" name="T_SGV_PESSOA_JURIDICA PK">
+<createdBy>Gabriel Zaki</createdBy>
+<createdTime>2024-03-09 00:47:17 UTC</createdTime>
+<ownerDesignName>MODELO LOGICO - SGV</ownerDesignName>
+<engineerTo>
+<item key="1FC5B513-EA91-6D77-17E3-2990C41B4A6B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>642F808E-FB29-2170-3A9E-9E4593C5E7B9</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

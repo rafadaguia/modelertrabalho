@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="ser" directorySegmentName="seg_0" id="29575658-E5F1-02A1-12EE-ABBA9F26FFBE">
+<createdBy>Gabriel Zaki</createdBy>
+<createdTime>2024-03-09 00:45:00 UTC</createdTime>
+<ownerDesignName>MODELO LOGICO - SGV</ownerDesignName>
+<engineerTo>
+<item key="1FC5B513-EA91-6D77-17E3-2990C41B4A6B" value="true"/>
+</engineerTo>
+<sourcePk>8358A6D1-DFBC-E86F-BF11-72E2E7695766</sourcePk>
+<targetPk>F597D363-656D-0BE5-BC8F-DF772B2D6182</targetPk>
+<arc>CE982757-B131-1878-119E-347DDD8F6E34</arc>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>74EE5384-AA8A-542E-A53B-B7466B5B4C8C</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>70EEA108-C072-6F1B-7C46-AA3800518AFB</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

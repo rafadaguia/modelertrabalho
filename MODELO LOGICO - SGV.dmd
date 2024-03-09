@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="MODELO LOGICO - SGV" id="076B6091-0E29-E259-449B-334ED601770C" version="3.5">
+<createdBy>Gabriel Zaki</createdBy>
+<createdTime>2024-03-09 00:12:00 UTC</createdTime>
+<ownerDesignName>MODELO LOGICO - SGV</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>076B6091-0E29-E259-449B-334ED601770C</designId>
+</OSDM_Design>
