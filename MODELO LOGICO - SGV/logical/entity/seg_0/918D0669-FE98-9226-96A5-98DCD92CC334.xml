@@ -61,10 +61,15 @@
 <engineerTo>
 <item key="1FC5B513-EA91-6D77-17E3-2990C41B4A6B" value="true"/>
 </engineerTo>
+<constraintName>ct_stat_cat</constraintName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>6</dataTypeSize>
+<listOfValues>
+<valueDef value="A" description="Categoria Ativa"/>
+<valueDef value="I" description="Categoria Inativa"/>
+</listOfValues>
 <ownDataTypeParameters>6,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="dt_inicio" id="71505F1D-212D-E2ED-E184-3D995F945332">
