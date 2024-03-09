@@ -41,7 +41,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>5</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="dt_cadastro" id="601DC1B5-AA92-9D8D-2FBA-FDE392C83F9C">
 <createdBy>Gabriel Zaki</createdBy>
@@ -75,9 +75,14 @@
 <engineerTo>
 <item key="1FC5B513-EA91-6D77-17E3-2990C41B4A6B" value="true"/>
 </engineerTo>
+<constraintName>video_ativo</constraintName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
+<listOfValues>
+<valueDef value="A" description="O vídeo está ativo"/>
+<valueDef value="I" description="O vídeo está inativo"/>
+</listOfValues>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
