@@ -124,5 +124,17 @@
 <attributeRef>4E60B828-D773-BD33-1981-116F488C4083</attributeRef>
 </usedAttributes>
 </identifier>
+<identifier id="D2F2CB8F-3FBF-F0CC-D6DF-3F98F57DC096" name="ds_basica_unique">
+<createdBy>rafad</createdBy>
+<createdTime>2024-03-09 19:35:16 UTC</createdTime>
+<ownerDesignName>MODELO LOGICO - SGV</ownerDesignName>
+<engineerTo>
+<item key="1FC5B513-EA91-6D77-17E3-2990C41B4A6B" value="true"/>
+</engineerTo>
+<newElementsIDs>3A13F845-9628-1452-66E2-F69032CC8FE4</newElementsIDs>
+<usedAttributes>
+<attributeRef>3A13F845-9628-1452-66E2-F69032CC8FE4</attributeRef>
+</usedAttributes>
+</identifier>
 </identifiers>
 </Entity>

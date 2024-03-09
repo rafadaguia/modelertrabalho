@@ -52,6 +52,9 @@
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>40</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="unique"/>
+</checkConstraint>
 <ownDataTypeParameters>40,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="sg_status_categoria" id="9B817F52-6438-8CAD-68D3-42D558EB4DA7">
@@ -109,6 +112,18 @@
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>56FEF143-6A83-D0F2-1848-6C029667E60A</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="8A081E9A-4E40-C793-899C-0B5E30B1E220" name="ds_categoria_unique">
+<createdBy>rafad</createdBy>
+<createdTime>2024-03-09 19:33:40 UTC</createdTime>
+<ownerDesignName>MODELO LOGICO - SGV</ownerDesignName>
+<engineerTo>
+<item key="1FC5B513-EA91-6D77-17E3-2990C41B4A6B" value="true"/>
+</engineerTo>
+<newElementsIDs>620782F4-2BD6-0B7E-675E-5C76D4EEA2EC</newElementsIDs>
+<usedAttributes>
+<attributeRef>620782F4-2BD6-0B7E-675E-5C76D4EEA2EC</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>
