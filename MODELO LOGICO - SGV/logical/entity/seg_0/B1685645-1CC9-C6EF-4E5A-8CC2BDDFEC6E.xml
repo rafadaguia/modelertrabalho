@@ -41,7 +41,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>5</dataTypePrecision>
-<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="ds_basica" id="3A13F845-9628-1452-66E2-F69032CC8FE4">
 <createdBy>Gabriel Zaki</createdBy>
@@ -53,8 +53,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>30</dataTypeSize>
-<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="ds_completa" id="BFD8D05C-2DD8-A961-7BBC-C928E1ACE268">
 <createdBy>Gabriel Zaki</createdBy>
@@ -66,8 +66,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>60</dataTypeSize>
-<ownDataTypeParameters>60,,</ownDataTypeParameters>
+<dataTypeSize>600</dataTypeSize>
+<ownDataTypeParameters>600,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="cd_barras" id="1E1206E6-A4F6-9EEE-F04F-E11510B18A72">
 <createdBy>Gabriel Zaki</createdBy>
@@ -79,9 +79,9 @@
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>43</dataTypeSize>
-<ownDataTypeParameters>43,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>13</dataTypePrecision>
+<ownDataTypeParameters>,13,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="sg_status" id="5397896A-2732-1F58-C9FF-FACDBEDD53E9">
 <createdBy>Gabriel Zaki</createdBy>

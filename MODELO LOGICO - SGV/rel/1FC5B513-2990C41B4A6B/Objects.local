@@ -1,2 +1,6 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<oracle.dbtools.crest.model.design.relational.RelationalDesign/>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="Table" objectID="9E15D59E-1201-ABDF-F1C2-274A65AD92F2" name="T_SGV_CATEGORIA_PRODUTO" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.relational.Table" propertyParentId="1FC5B513-EA91-6D77-17E3-2990C41B4A6B" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Table" objectID="64124457-2BA0-D1E3-0041-0204443B7D4C" name="T_SGV_PRODUTO" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.relational.Table" propertyParentId="1FC5B513-EA91-6D77-17E3-2990C41B4A6B" propertySourceId="" propertyTargetId=""/>
+   <object objectType="FKIndexAssociation" objectID="4FD70BDD-98B7-E97F-1550-4291A1030339" name="T_SGV_PRODUTO_T_SGV_CATEGORIA_PRODUTO_FK" seqName="seg_0" containerID="64124457-2BA0-D1E3-0041-0204443B7D4C" refContainerID="9E15D59E-1201-ABDF-F1C2-274A65AD92F2" propertyClassName="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" propertyParentId="1FC5B513-EA91-6D77-17E3-2990C41B4A6B" propertySourceId="9E15D59E-1201-ABDF-F1C2-274A65AD92F2" propertyTargetId="64124457-2BA0-D1E3-0041-0204443B7D4C"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>
