@@ -1,6 +1,6 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
 <oracle.dbtools.crest.model.design.logical.LogicalDesign>
-   <object objectType="Entity" objectID="918D0669-FE98-9226-96A5-98DCD92CC334" name="T_SGV_CATEGORIA_PRODUTO" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Entity" propertyParentId="321DE0DB-5A44-9090-0EF1-9F9E7856952B" propertySourceId="" propertyTargetId=""/>
-   <object objectType="Entity" objectID="B1685645-1CC9-C6EF-4E5A-8CC2BDDFEC6E" name="T_SGV_PRODUTO" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Entity" propertyParentId="321DE0DB-5A44-9090-0EF1-9F9E7856952B" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Entity" objectID="918D0669-FE98-9226-96A5-98DCD92CC334" name="SGV_CATEGORIA_PRODUTO" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Entity" propertyParentId="321DE0DB-5A44-9090-0EF1-9F9E7856952B" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Entity" objectID="B1685645-1CC9-C6EF-4E5A-8CC2BDDFEC6E" name="SGV_PRODUTO" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Entity" propertyParentId="321DE0DB-5A44-9090-0EF1-9F9E7856952B" propertySourceId="" propertyTargetId=""/>
    <object objectType="Relation" objectID="F34C13D5-5A1A-E312-2A1F-446C92A8FD06" name="possuir" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Relation" propertyParentId="321DE0DB-5A44-9090-0EF1-9F9E7856952B" propertySourceId="B1685645-1CC9-C6EF-4E5A-8CC2BDDFEC6E" propertyTargetId="918D0669-FE98-9226-96A5-98DCD92CC334"/>
 </oracle.dbtools.crest.model.design.logical.LogicalDesign>

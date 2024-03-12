@@ -1,7 +1,9 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B1685645-1CC9-C6EF-4E5A-8CC2BDDFEC6E" name="T_SGV_PRODUTO">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B1685645-1CC9-C6EF-4E5A-8CC2BDDFEC6E" name="SGV_PRODUTO">
 <createdBy>Gabriel Zaki</createdBy>
 <createdTime>2024-03-09 00:54:00 UTC</createdTime>
+<comment><![CDATA[Entidade dos produtos]]></comment>
+<commentInRDBMS><![CDATA[Entidade dos produtos]]></commentInRDBMS>
 <ownerDesignName>MODELO LOGICO - SGV</ownerDesignName>
 <engineerTo>
 <item key="1FC5B513-EA91-6D77-17E3-2990C41B4A6B" value="true"/>
@@ -18,6 +20,8 @@
 <Attribute name="cd_produto" id="4E60B828-D773-BD33-1981-116F488C4083">
 <createdBy>Gabriel Zaki</createdBy>
 <createdTime>2024-03-09 00:54:40 UTC</createdTime>
+<comment><![CDATA[Atributo do código do produto. Deve ser único e gerado por um Identity.]]></comment>
+<commentInRDBMS><![CDATA[Coluna do código do produto. Deve ser único e gerado por um Identity.]]></commentInRDBMS>
 <ownerDesignName>MODELO LOGICO - SGV</ownerDesignName>
 <engineerTo>
 <item key="1FC5B513-EA91-6D77-17E3-2990C41B4A6B" value="true"/>
@@ -31,6 +35,8 @@
 <Attribute name="cd_categoria" id="924E815D-958A-2ADD-B659-2F7259B7E321">
 <createdBy>Gabriel Zaki</createdBy>
 <createdTime>2024-03-09 01:07:36 UTC</createdTime>
+<comment><![CDATA[Atributo estrangeiro do código da categoria. Deve ser único e gerado por Identity.  Chave estrangeira.]]></comment>
+<commentInRDBMS><![CDATA[Coluna estrangeiro do código da categoria. Deve ser único e gerado por Identity.  Chave estrangeira.]]></commentInRDBMS>
 <generatorID>F34C13D5-5A1A-E312-2A1F-446C92A8FD06</generatorID>
 <ownerDesignName>MODELO LOGICO - SGV</ownerDesignName>
 <engineerTo>
@@ -43,9 +49,11 @@
 <dataTypePrecision>5</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="ds_basica" id="3A13F845-9628-1452-66E2-F69032CC8FE4">
+<Attribute name="ds_normal" id="3A13F845-9628-1452-66E2-F69032CC8FE4">
 <createdBy>Gabriel Zaki</createdBy>
 <createdTime>2024-03-09 00:55:27 UTC</createdTime>
+<comment><![CDATA[Atributo da descrição normal do Produto.]]></comment>
+<commentInRDBMS><![CDATA[Coluna da descrição normal do Produto.]]></commentInRDBMS>
 <ownerDesignName>MODELO LOGICO - SGV</ownerDesignName>
 <engineerTo>
 <item key="1FC5B513-EA91-6D77-17E3-2990C41B4A6B" value="true"/>
@@ -59,6 +67,8 @@
 <Attribute name="ds_completa" id="BFD8D05C-2DD8-A961-7BBC-C928E1ACE268">
 <createdBy>Gabriel Zaki</createdBy>
 <createdTime>2024-03-09 00:55:54 UTC</createdTime>
+<comment><![CDATA[Atributo da descrição completa do produto.]]></comment>
+<commentInRDBMS><![CDATA[Coluna da descrição completa do produto.]]></commentInRDBMS>
 <ownerDesignName>MODELO LOGICO - SGV</ownerDesignName>
 <engineerTo>
 <item key="1FC5B513-EA91-6D77-17E3-2990C41B4A6B" value="true"/>
@@ -72,6 +82,8 @@
 <Attribute name="cd_barras" id="1E1206E6-A4F6-9EEE-F04F-E11510B18A72">
 <createdBy>Gabriel Zaki</createdBy>
 <createdTime>2024-03-09 00:56:09 UTC</createdTime>
+<comment><![CDATA[Atributo do código de barras do produto. Em padrão EAN13.]]></comment>
+<commentInRDBMS><![CDATA[Coluna do código de barras do produto. Em padrão EAN13.]]></commentInRDBMS>
 <ownerDesignName>MODELO LOGICO - SGV</ownerDesignName>
 <engineerTo>
 <item key="1FC5B513-EA91-6D77-17E3-2990C41B4A6B" value="true"/>
@@ -86,6 +98,8 @@
 <Attribute name="sg_status" id="5397896A-2732-1F58-C9FF-FACDBEDD53E9">
 <createdBy>Gabriel Zaki</createdBy>
 <createdTime>2024-03-09 00:58:28 UTC</createdTime>
+<comment><![CDATA[Atributo de Status do produto. Deve ser I para produto inativo e A para produto ativo.]]></comment>
+<commentInRDBMS><![CDATA[Coluna de Status do produto. Deve ser I para produto inativo e A para produto ativo.]]></commentInRDBMS>
 <ownerDesignName>MODELO LOGICO - SGV</ownerDesignName>
 <engineerTo>
 <item key="1FC5B513-EA91-6D77-17E3-2990C41B4A6B" value="true"/>
@@ -99,6 +113,8 @@
 <Attribute name="vl_unitario" id="C0B3DCD3-DB5B-1A12-2066-6083AB396A83">
 <createdBy>Gabriel Zaki</createdBy>
 <createdTime>2024-03-09 00:59:16 UTC</createdTime>
+<comment><![CDATA[Atributo para o valor do produto aceitando até duas casas decimais.]]></comment>
+<commentInRDBMS><![CDATA[Coluna para o valor do produto aceitando até duas casas decimais.]]></commentInRDBMS>
 <ownerDesignName>MODELO LOGICO - SGV</ownerDesignName>
 <engineerTo>
 <item key="1FC5B513-EA91-6D77-17E3-2990C41B4A6B" value="true"/>
@@ -115,11 +131,13 @@
 <identifier id="D6B8A096-2AD3-85CB-770C-EAD67EE48629" name="T_SGV_PRODUTO PK">
 <createdBy>Gabriel Zaki</createdBy>
 <createdTime>2024-03-09 00:55:05 UTC</createdTime>
+<comment><![CDATA[Chave primária da entidade Produto (SGV_PRODUTO) contendo o código do produto.]]></comment>
 <ownerDesignName>MODELO LOGICO - SGV</ownerDesignName>
 <engineerTo>
 <item key="1FC5B513-EA91-6D77-17E3-2990C41B4A6B" value="true"/>
 </engineerTo>
 <pk>true</pk>
+<newElementsIDs>4E60B828-D773-BD33-1981-116F488C4083</newElementsIDs>
 <usedAttributes>
 <attributeRef>4E60B828-D773-BD33-1981-116F488C4083</attributeRef>
 </usedAttributes>
@@ -127,6 +145,7 @@
 <identifier id="D2F2CB8F-3FBF-F0CC-D6DF-3F98F57DC096" name="ds_basica_unique">
 <createdBy>rafad</createdBy>
 <createdTime>2024-03-09 19:35:16 UTC</createdTime>
+<comment><![CDATA[Chave única da descrição do produto.]]></comment>
 <ownerDesignName>MODELO LOGICO - SGV</ownerDesignName>
 <engineerTo>
 <item key="1FC5B513-EA91-6D77-17E3-2990C41B4A6B" value="true"/>
