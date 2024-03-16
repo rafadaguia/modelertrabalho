@@ -14,7 +14,7 @@ DROP TABLE t_sgv_produto CASCADE CONSTRAINTS;
 -- predefined type, no DDL - XMLTYPE
 
 CREATE TABLE t_sgv_categoria_produto (
-    cd_categoria        NUMBER(5) NOT NULL,
+    cd_categoria        NUMBER(5) GENERATED ALWAYS AS IDENTITY,
     ds_categoria        VARCHAR2(100) NOT NULL,
     nm_categoria        VARCHAR2(30) NOT NULL,
     sg_status_categoria CHAR(1) NOT NULL,
@@ -30,10 +30,10 @@ COMMENT ON TABLE t_sgv_categoria_produto IS
     'Tabela da categoria de produtos.';
 
 COMMENT ON COLUMN t_sgv_categoria_produto.cd_categoria IS
-    'Coluna estrangeiro do código da categoria. Deve ser único e gerado por Identity.';
+    'Coluna estrangeiro do cï¿½digo da categoria. Deve ser ï¿½nico e gerado por Identity.';
 
 COMMENT ON COLUMN t_sgv_categoria_produto.ds_categoria IS
-    'Coluna da descrição da categoria do produto.';
+    'Coluna da descriï¿½ï¿½o da categoria do produto.';
 
 COMMENT ON COLUMN t_sgv_categoria_produto.nm_categoria IS
     'Coluna do nome da categoria de produto.';
@@ -42,10 +42,10 @@ COMMENT ON COLUMN t_sgv_categoria_produto.sg_status_categoria IS
     'Coluna do Status da Categoria do Produto. Deve ser I para Status Inativo e A para Status Ativo.';
 
 COMMENT ON COLUMN t_sgv_categoria_produto.dt_inicio IS
-    'Coluna para a data de início do produto.';
+    'Coluna para a data de inï¿½cio do produto.';
 
 COMMENT ON COLUMN t_sgv_categoria_produto.dt_termino IS
-    'Coluna para a data de término do produto. Algoritmo do sistema deve altomatizar para, em caso de preenchimento deste campo, 
+    'Coluna para a data de tï¿½rmino do produto. Algoritmo do sistema deve altomatizar para, em caso de preenchimento deste campo, 
 tornar o status da categoria inativo.';
 
 ALTER TABLE t_sgv_categoria_produto ADD CONSTRAINT ck_sgv_dt_termino CHECK ( dt_termino >= dt_inicio );
@@ -58,7 +58,7 @@ ALTER TABLE t_sgv_categoria_produto ADD CONSTRAINT pk_sgv_categoria_produto PRIM
 ALTER TABLE t_sgv_categoria_produto ADD CONSTRAINT un_sgv_cat_prod_ds_categoria UNIQUE ( ds_categoria );
 
 CREATE TABLE t_sgv_produto (
-    cd_produto   NUMBER(5) NOT NULL,
+    cd_produto   NUMBER(5) GENERATED ALWAYS AS IDENTITY,
     ds_normal    VARCHAR2(100) NOT NULL,
     cd_categoria NUMBER(5) NOT NULL,
     ds_completa  VARCHAR2(600) NOT NULL,
@@ -72,25 +72,25 @@ COMMENT ON TABLE t_sgv_produto IS
     'Entidade dos produtos';
 
 COMMENT ON COLUMN t_sgv_produto.cd_produto IS
-    'Coluna do código do produto. Deve ser único e gerado por um Identity.';
+    'Coluna do cï¿½digo do produto. Deve ser ï¿½nico e gerado por um Identity.';
 
 COMMENT ON COLUMN t_sgv_produto.ds_normal IS
-    'Coluna da descrição normal do Produto.';
+    'Coluna da descriï¿½ï¿½o normal do Produto.';
 
 COMMENT ON COLUMN t_sgv_produto.cd_categoria IS
-    'Coluna estrangeiro do código da categoria. Deve ser único e gerado por Identity.  Chave estrangeira.';
+    'Coluna estrangeiro do cï¿½digo da categoria. Deve ser ï¿½nico e gerado por Identity.  Chave estrangeira.';
 
 COMMENT ON COLUMN t_sgv_produto.ds_completa IS
-    'Coluna da descrição completa do produto.';
+    'Coluna da descriï¿½ï¿½o completa do produto.';
 
 COMMENT ON COLUMN t_sgv_produto.sg_status IS
     'Coluna de Status do produto. Deve ser I para produto inativo e A para produto ativo.';
 
 COMMENT ON COLUMN t_sgv_produto.vl_unitario IS
-    'Coluna para o valor do produto aceitando até duas casas decimais.';
+    'Coluna para o valor do produto aceitando atï¿½ duas casas decimais.';
 
 COMMENT ON COLUMN t_sgv_produto.cd_barras IS
-    'Coluna do código de barras do produto. Em padrão EAN13.';
+    'Coluna do cï¿½digo de barras do produto. Em padrï¿½o EAN13.';
 
 ALTER TABLE t_sgv_produto
     ADD CONSTRAINT ck_sg_status_produto CHECK ( sg_status IN ( 'A', 'I' ) );
