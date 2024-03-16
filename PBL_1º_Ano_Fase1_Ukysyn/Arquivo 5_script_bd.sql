@@ -23,17 +23,14 @@ CREATE TABLE t_sgv_categoria_produto (
 )
 LOGGING;
 
-ALTER TABLE t_sgv_categoria_produto
-    ADD CONSTRAINT ck_sgv_sg_status_categoria CHECK ( sg_status_categoria IN ( 'A', 'I' ) );
-
 COMMENT ON TABLE t_sgv_categoria_produto IS
     'Tabela da categoria de produtos.';
 
 COMMENT ON COLUMN t_sgv_categoria_produto.cd_categoria IS
-    'Coluna estrangeiro do c�digo da categoria. Deve ser �nico e gerado por Identity.';
+    'Coluna estrangeiro do codigo da categoria. Deve ser unico e gerado por Identity.';
 
 COMMENT ON COLUMN t_sgv_categoria_produto.ds_categoria IS
-    'Coluna da descri��o da categoria do produto.';
+    'Coluna da descricao da categoria do produto.';
 
 COMMENT ON COLUMN t_sgv_categoria_produto.nm_categoria IS
     'Coluna do nome da categoria de produto.';
@@ -42,10 +39,10 @@ COMMENT ON COLUMN t_sgv_categoria_produto.sg_status_categoria IS
     'Coluna do Status da Categoria do Produto. Deve ser I para Status Inativo e A para Status Ativo.';
 
 COMMENT ON COLUMN t_sgv_categoria_produto.dt_inicio IS
-    'Coluna para a data de in�cio do produto.';
+    'Coluna para a data de inicio do produto.';
 
 COMMENT ON COLUMN t_sgv_categoria_produto.dt_termino IS
-    'Coluna para a data de t�rmino do produto. Algoritmo do sistema deve altomatizar para, em caso de preenchimento deste campo, 
+    'Coluna para a data de termino do produto. Algoritmo do sistema deve altomatizar para, em caso de preenchimento deste campo, 
 tornar o status da categoria inativo.';
 
 ALTER TABLE t_sgv_categoria_produto ADD CONSTRAINT ck_sgv_dt_termino CHECK ( dt_termino >= dt_inicio );
@@ -72,25 +69,25 @@ COMMENT ON TABLE t_sgv_produto IS
     'Entidade dos produtos';
 
 COMMENT ON COLUMN t_sgv_produto.cd_produto IS
-    'Coluna do c�digo do produto. Deve ser �nico e gerado por um Identity.';
+    'Coluna do codigo do produto. Deve ser unico e gerado por um Identity.';
 
 COMMENT ON COLUMN t_sgv_produto.ds_normal IS
-    'Coluna da descri��o normal do Produto.';
+    'Coluna da descricao normal do Produto.';
 
 COMMENT ON COLUMN t_sgv_produto.cd_categoria IS
-    'Coluna estrangeiro do c�digo da categoria. Deve ser �nico e gerado por Identity.  Chave estrangeira.';
+    'Coluna estrangeiro do codigo da categoria. Deve ser unico e gerado por Identity.  Chave estrangeira.';
 
 COMMENT ON COLUMN t_sgv_produto.ds_completa IS
-    'Coluna da descri��o completa do produto.';
+    'Coluna da descricao completa do produto.';
 
 COMMENT ON COLUMN t_sgv_produto.sg_status IS
     'Coluna de Status do produto. Deve ser I para produto inativo e A para produto ativo.';
 
 COMMENT ON COLUMN t_sgv_produto.vl_unitario IS
-    'Coluna para o valor do produto aceitando at� duas casas decimais.';
+    'Coluna para o valor do produto aceitando ate duas casas decimais.';
 
 COMMENT ON COLUMN t_sgv_produto.cd_barras IS
-    'Coluna do c�digo de barras do produto. Em padr�o EAN13.';
+    'Coluna do codigo de barras do produto. Em padrao EAN13.';
 
 ALTER TABLE t_sgv_produto
     ADD CONSTRAINT ck_sg_status_produto CHECK ( sg_status IN ( 'A', 'I' ) );
