@@ -1,0 +1,1 @@
+RN 24 - A cada pedido feito, os clientes poderão avaliar os produtos presentes no pedido com notas entre 1 e 5 e um comentário. Para isso, devem ser registrados na Avaliação, o código do cliente, o código do pedido, o código do produto, a nota aferida, o comentário sobre o produto e a data e horário completo da avaliação.
