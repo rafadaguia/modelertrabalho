@@ -103,6 +103,11 @@ ALTER TABLE t_sgv_produto
 
 
 
+
+
+
+
+
 -- Oracle SQL Developer Data Modeler Summary Report: 
 -- 
 -- CREATE TABLE                             2
